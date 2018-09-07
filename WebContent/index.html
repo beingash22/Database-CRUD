@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Add new Employee</title>
+<style>
+ul {
+	list-style-type: none;
+	margin: 10;
+	padding: 2;
+	overflow: auto;
+	background-color: #333333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+
+table {
+	font: italic bold 12px/30px Georgia, serif;
+	border-collapse: collapse;
+	width: 70%;
+	background-color: #e6e6fa;
+	color: #dcdcdc;
+}
+
+td {
+	text-align: center;
+	padding: 10px;
+}
+
+#logo {
+	position: absolute;
+	left: 77%;
+	top: 130px;
+}
+</style>
+</head>
+<body>
+	<img id="logo" src="image.png" alt="logo" height="300" width="250">
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<fieldset>
+		<legend>Enter your credentials:</legend>
+
+		<form action="SaveServ" method="POST" autocomplete="on">
+			<table style="color: #5f9ea0">
+
+				<tr>
+					<td>Id <span style="color: red">*</span>:<br>
+					<input type="text" name="id" required /></td>
+				</tr>
+				<tr>
+					<td>Name <span style="color: red">*</span>: <br>
+					<input type="text" name="fullname" required />
+					</td>
+				</tr>
+				<tr>
+					<td>Password <span style="color: red">*</span>:<br>
+					<input type="password" name="password" required /></td>
+				</tr>
+				<tr>
+					<td>Email <span style="color: red">*</span>:<br>
+					<input type="email" name="email" required /></td>
+				</tr>
+
+				<tr>
+					<td><input type="submit" value="Save Employees"></td>
+				</tr>
+
+			</table>
+			<a href="ViewServ">View all employees</a>
+		</form>
+	</fieldset>
+
+	<hr>
+	<marquee> Please fill in all the mandatory details marked
+		with * </marquee>
+	<hr>
+</body>
+</html>
